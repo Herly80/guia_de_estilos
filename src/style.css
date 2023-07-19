@@ -26,8 +26,8 @@ body {
     justify-content: start;
     width: 15rem;
     height: 15rem;
-    border-top: 5px solid #6aa84f;
-    border-left: 5px solid #6aa84f;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
     margin-left: 15rem;
     margin-top: 3rem;
 }
@@ -36,8 +36,8 @@ body {
     display: flex;
     width: 15rem;
     height: 15rem;
-    border-bottom: 5px solid #6aa84f;
-    border-right: 5px solid #6aa84f;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
     margin-left: 100rem;
     margin-top: -10rem;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .container-titulo span {
-    color: #6aa84f;
+    color: #cc1155;
 }
 
 .titulo {
@@ -56,7 +56,7 @@ body {
     margin-top: -12rem;
     font-size: 4rem;
     text-align: center;
-    color: #1155cc;
+    color: black;
     line-height: 4rem;
     font-family: var(--fuenteHeading);
 }
@@ -85,7 +85,7 @@ body {
     margin-bottom: 1rem;
     width: 7rem;
     height: 2px;
-    background: #6aa84f;
+    background: #cc1155;
 }
 
 .enlaces {
@@ -100,7 +100,7 @@ body {
 }
 
 .enlaces a:hover {
-    color: #1155cc;
+    color: #cc2a11;
 }
 
 /**Logotipo**/
@@ -108,7 +108,8 @@ body {
 .siguiente {
     font-size: 2rem;
     padding: 2rem;
-    color: #1155cc;
+    color: black;
+    text-decoration: none;
 }
 
 .title_logo {
@@ -120,7 +121,7 @@ body {
     margin: auto;
     font-size: 4rem;
     font-family: var(--fuenteHeading);
-    color: #1155cc;
+    color: black;
     letter-spacing: 2px;
 }
 
@@ -130,7 +131,7 @@ body {
     margin-bottom: 1rem;
     width: 7rem;
     height: 3px;
-    background: #6aa84f;
+    background: #cc1155;
     margin-top: .5rem;
 }
 
@@ -143,8 +144,31 @@ body {
 .contenedor_principal {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    padding: 3rem;
+    margin: 0;
+    line-height: 2.5rem;
+    margin-top: 8rem;
+}
+
+.contenedor_principal a {
+    text-decoration: none;
+}
+
+.logotipo {
+    text-align: center;
+}
+
+
+
+.logotipo {
+    font-size: 3rem;
+    font-family: var(--fuenteHeading);
+    color: black;
+}
+
+.logotipo span {
+    font-size: 1.7rem;
+    font-family: var(--fuenteParrafos);
+    color: #cc1155;
 }
 
 .fondo,
@@ -192,7 +216,7 @@ body {
 .modelos_titulos,
 .parrafo {
     margin-top: 6rem;
-    border: 2px solid #6aa84f;
+    border: 2px solid #cc1155;
     padding: 2rem;
     border-radius: 2rem;
 }
@@ -414,18 +438,18 @@ button {
   }
 
 .boton4 {
-    background-color: #6aa84f;
+    background-color: #cc1155;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: var(--fuenteHeading);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 1.5rem;
     width: 20rem;
 }
 
 .boton4:hover {
-    background-color: #78C955 ;
+    background-color: #cc2a11;
 }
 
 .boton {
@@ -454,7 +478,7 @@ button {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #6aa84f;
+    background: #cc1155;
     border-radius: 1.625rem;
    }
    
@@ -501,6 +525,7 @@ button {
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
+    font-family: var(--fuenteParrafos);
    }
    
    button:hover .circle {
@@ -517,12 +542,11 @@ button {
    }
 
 .contenedor-botones {
-    margin-top: 10rem;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
+   margin-top: 15rem;
 }
 
 /** Colores **/
@@ -530,42 +554,15 @@ button {
 .container_colores {
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .contenedor-color {
     width: 15rem;
     height: 10rem;
+    font-size: 1.5rem;
 }
-.color-1 {
-   background-color: #6aa84f;
-}
-
-.color-2 {
-    background-color: #4fa860;
-}
-.color-3 {
-    background-color: #4fa88d;
-}
-.color-4 {
-    background-color: #4f97a8;
-}
-.color-5 {
-    background-color: #4f6aa8;
-}
-.color-6 {
-    background-color: #604fa8;
-}
-
-.color-7 {
-    background-color: #1155cc;
-}
-.color-8 {
-    background-color: #2b11cc;
-}
-.color-9 {
-    background-color: #8811cc;
-}
+ 
 .color-10 {
     background-color: #cc11b2;
 }
@@ -574,6 +571,9 @@ button {
 }
 .color-12 {
     background-color: #cc2a11;
+}
+.color-13 {
+    background-color: #000;
 }
 .parrafo-colores_1 {
     font-size: 2rem;
@@ -586,8 +586,9 @@ button {
 .parrafo-colores_2 {
     font-size: 2rem;
     font-family: var(--fuenteParrafos);
-    margin-top: 8rem;
-    margin-bottom: -8rem;
-    margin-right: 12.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 10rem;
 
 }
